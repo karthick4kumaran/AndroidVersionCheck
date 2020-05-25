@@ -1,17 +1,11 @@
 package org.example;
 
-import static org.junit.Assert.assertTrue;
+import org.testng.annotations.Test;
 
-import org.junit.Test;
+import static org.testng.AssertJUnit.assertTrue;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
+
+public class AppTest {
     @Test
     public void shouldAnswerWithTrue()
     {
