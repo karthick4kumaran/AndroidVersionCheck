@@ -9,6 +9,9 @@ public class AppTest {
     @Test
     public void shouldAnswerWithTrue()
     {
+        System.setProperty("AndroidVersion","NewAndroidVersionReleased");
+        System.setProperty("IOSVersion","NewIOSVersionReleased");
         assertTrue( true );
+
     }
 }
