@@ -14,7 +14,7 @@ public class AppTest {
     @Test
     public void shouldAnswerWithTrue() throws Exception {
         PrintWriter pw = new PrintWriter("updatedVersion.txt");
-        pw.write("12");
+        pw.write("15");
         pw.close();
 
     }
