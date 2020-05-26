@@ -1,15 +1,22 @@
 package org.example;
 
 import org.testng.annotations.Test;
+
+import java.io.File;
+import java.io.FileReader;
+import java.util.Properties;
+
 import static org.testng.AssertJUnit.assertTrue;
 
 
 public class AppTest {
     @Test
     public void shouldAnswerWithTrue() throws Exception {
-        System.out.println("Old Version of Android is "+System.getProperty("android"));
-        System.setProperty("android","11");
-        System.out.println("New Version of Android is "+System.getProperty("android"));
+        Properties prop = new Properties();
+        prop.load(new FileReader(new File("output.properties")));
+        prop.setProperty("android","10");
+        prop.setProperty("ios","11");
+        prop.setProperty("xcode","12");
         assertTrue( true );
 
     }
